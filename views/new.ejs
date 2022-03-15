@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="/styles/style.css" rel="stylesheet">
+    <title>Added Items</title>
+</head>
+<body>
+    <h1>WeHawk | A Collection of Luxury Goods</h1>
+    <nav>
+    <h2>Added Fresh</h2>
+    <a href="/products">
+        <button type="button" class="btn btn-dark">Nevermind, Take Me Home</button>
+    </a> 
+    </nav>
+    <div class="container">
+     <div class="new-card">
+      <form action="/products" method="POST">
+       <div class="new-name">Name: </div>
+       <div class="addition"><input type="text" name="name" placeholder="Who Made It?"/></div>
+       
+       <div class="new-description">Description: </div>
+       <div class="addition"><input type="text" name="description" placeholder="So What Is It?"/></div>
+       
+       <div class="new-image">Image: </div>
+       <div class="addition"><input type="text" name="img" placeholder="What It Look Like?"/></div>
+        
+       <div class="new-price">Price: </div>
+       <div class="addition"><input type="text" name="price" placeholder="Dont Hurt Em!"/></div>
+        
+       <div class="new-qty">Qty: </div>
+       <div class="addition"><input type="text" name="price" placeholder="How Many?"/></div>
+        
+       <div class="new-button"><input type="submit" class="new-submission" value="Add Your Fresh"></div>
+     </form> 
+   </div>  
+  </div>
+</body>
+</html>

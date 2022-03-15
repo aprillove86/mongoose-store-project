@@ -1,0 +1,71 @@
+.grid-container {
+    height: 300px;
+    size: 40%;
+    position: relative;
+    margin: 40px 20px;
+    border-radius: 12px;
+    border-style: hidden;
+    flex-wrap: wrap;
+    padding: 20px;
+      
+    
+}
+
+body {
+	background-color: rgb(25, 58, 59);
+    
+}
+   
+.price {
+    background-color: rgb(215, 243, 243);
+    font-style: oblique;
+    border-radius: 11px;
+
+}
+.main-card {
+    max-width: 400px;
+    margin: 5px auto;
+    text-align: center;
+    position: relative;
+    font-family: arial;
+    border-radius: 12px;
+    border-style: solid;
+    font-size: 15px;
+    background-color: rgb(215, 243, 243);
+    border-color:rgb(206, 157, 52);
+}
+h1 {
+    color: rgb(182, 136, 37);
+    text-shadow:   1px 2px rgb(220, 224, 204);
+    font-size: 45px;
+    text-align: left;
+   
+    
+}
+.card {
+    box-shadow: 0 4px 8px 2px rgba(228, 227, 198, 0.2);
+    max-width: 400px;
+    margin: 5px auto;
+    text-align: center;
+    position: relative;
+    font-family: arial;
+    border-radius: 12px;
+    border-style: solid;
+    font-size: 15px;
+    margin: 100px auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: rgb(215, 243, 243);
+    border-color: rgb(224, 178, 50);
+   
+}
+.image {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+h2 {
+    color: rgb(184, 138, 41);
+    background-color: rgb(215, 243, 243);
+}

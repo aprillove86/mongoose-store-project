@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap CSS -->
+    <!-- JavaScript Bundle with Popper -->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="/styles/style.css" rel="stylesheet">
+    <title>Mongoose Store</title>
+    </head>
+  <body>
+    <span><h1>WeHawk | A Collection of Resale Luxury Goods</h1></span>
+    <div class="grid-container">
+        <% allProducts.forEach(product => { %>
+            <div class="main-card">
+              <h2><%= product.name  %></h2>
+              <a href="/products/<%= product._id%>">
+                <img src="<%= product.img %>" class="image"/>
+              </a>
+            <div class="price">Price: <%= product.price %> USD</div>
+            </div>
+        <% }) %>
+    </div>
+    
+ </body>
+</html> 

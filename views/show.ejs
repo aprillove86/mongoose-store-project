@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Bootstrap CSS -->
+    <!-- JavaScript Bundle with Popper -->
+   
+    <link href="/styles/style.css" rel="stylesheet">
+    <title>Show Route</title>
+  </head>
+  <body>
+    <a href="/products">
+    <span><h1>WeHawk | A Collection of Resale Luxury Goods</h1></span></a>
+    <main>
+      <a href="/products/seed">
+        <button type="button" class="btn btn-dark">Just Hold On, We're Going Home</button>
+      </a> 
+      <div class="main-card">
+              <img src="<%= singleProduct.img %>" class="image"/>
+              <h3><%=singleProduct.name %></h3>
+              <h4 class="single-price">Price: <%= singleProduct.price %> USD</h4>
+              <h5><%=singleProduct.description%></h5>
+              <form action="/products/<%=singleProduct._id%>?_method=DELETE" method="POST">
+                <input type="submit" class="delete" value="Rubbish"/>
+               </form>   
+              <a href="/products/<%=singleProduct._id%>/edit">
+                <input type="submit" class="edit" value="Tweak Me"/>   
+              <form action="/products/<%=singleProduct._id%>/buy?_method=PUT" method="POST">
+                <% if(singleProduct.qty > 0) { %>
+                <input type="submit" value="Get It" />
+              <% } else { %>
+              <input type="submit" value="No More, Fam" />
+            <% } %>
+              </form>   
+      </div>
+     </main>
+  </body>
+  </html> 
